@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+.footer {
+    background-color: #f2f9ff;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 5rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+    color: #333;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+hr {
+    border: 1px solid #003366;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section1, .section2, .socialmedia {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.section1 h1, .section2 h2, .socialmedia h2 {
+    font-size: 1.5rem;
+    color: #003366;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.quicklinks {
+    flex: 1;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.quicklinks h1 {
+    font-size: 1.2rem;
+    color: #003366;
+}
+
+.quicklinks ul {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.quicklinks ul li {
+    font-weight: bold;
+    list-style-type: none;
+    padding: 8px 0;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.quicklinks ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.socialLinks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+}
+
+.socialLinks a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialLinks a:hover {
+    color: #003366;
+    transform: translateY(-2px);
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+.footerlinks {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footerlinks a:hover {
+    color: #003366;
+    transform: translateY(-2px);
+}
+
+.icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+
+.subscribe {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe h2 {
+    font-size: 1rem;
+    color: #003366;
+    font-style: "Roboto Slab";
+    
+}
+
+.emailInput {
+    width: 50%;
+    max-width: 300px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    
+    font-size: 1rem;
+    
+}
+
+.subscribeButton {
+    padding: 0.8rem 0.5rem;
+    background-color: #003366;
+    border: none;
+    color: white;
+    
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribeButton:hover {
+    background-color: #029ab3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .section1, .section3 {
+        align-items: center;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+
+    .emailInput, .subscribeButton {
+        width: 100%;
+        margin: 0;
+    }
+
+    .subscribe {
+        width: 100%;
+        padding: 0;
+    }
+
+    .subscribeButton {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .section2 h2 {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 6rem;
+    }
+
+    .socialLinks {
+        gap: 1rem;
+    }
+
+    .emailInput {
+        width: 100%;
+    }
+}

@@ -1,0 +1,164 @@
+.staffContainer {
+  padding: 5rem 4rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f0faff, #b3e0ff);
+ 
+}
+
+.staffContainer hr {
+  border: 1px solid #003366;
+  width: 50%;
+  margin: 0 auto 20px;
+
+}
+
+.staffHeader {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: font-size 0.3s ease;
+}
+
+.staffGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.staffCard {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 10px;
+  width: 290px;
+  height: 290px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.staffCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.staffImage {
+  width: 100%; 
+  height: 50%; 
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+
+.staffName {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #007bb5;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.staffSpecialty {
+  font-size: 1.1rem;
+  margin-top: 0;
+  color: #555;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.readMoreBtn {
+  border-radius: 30px;
+  background-color: #003366;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  width: 100%; 
+  margin-top: 1rem; 
+}
+
+.readMoreBtn:hover {
+  background-color: #0199b6;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.active .staffImage {
+  display:none;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: width 0.3s ease;
+}
+
+.active .staffDescription {
+  display: block; 
+  font-size: 1.4rem;
+  color: #003366;
+  margin-top: 1rem;
+}
+
+.active .staffName,
+.active .staffSpecialty {
+  display: none; 
+}
+
+.active {
+  height: auto; 
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .staffHeader {
+    font-size: 2.5rem;
+  }
+
+  .staffGrid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .staffHeader {
+    font-size: 2.2rem;
+  }
+
+  .staffCard {
+    padding: 1.5rem;
+  }
+
+  .readMoreBtn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .staffHeader {
+    font-size: 2rem;
+  }
+
+  .staffGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .staffCard {
+    padding: 1.5rem;
+  }
+
+  .readMoreBtn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+  .staffImage {
+    width: 130px;
+    height: 130px;
+  }
+}

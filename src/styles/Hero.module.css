@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.main {
+  position: relative;
+
+  padding-top: 6rem;
+  padding: 5rem 4rem 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e6f7ff, #b3e0ff);
+  text-align: left;
+
+  transition: background 0.5s ease-in-out;
+}
+
+.content {
+  max-width: 50%;
+  padding-right: 2rem;
+}
+
+.headerText {
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.text {
+  font-size: 3rem;
+  color: #003366;
+  font-weight: bold;
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text2 {
+  font-size: 2.5rem;
+  color: rgb(5, 150, 170);
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+  animation: typing 4s steps(30, end) forwards, step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.description {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.5;
+
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.8s;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact,
+.appointment {
+  border-radius: 25px;
+  background-color: #003366;
+  border: none;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.contact:hover,
+.appointment:hover {
+  background-color: rgb(1, 175, 202);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 2s ease-in-out;
+  border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 4rem 0 4rem;
+  }
+
+  .content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .headerText {
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .images {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    top: 62px;
+    padding-top: 4rem;
+    padding: 3rem;
+    display:block;
+    height: auto;
+  }
+
+  .text,
+  .text2 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .contact,
+  .appointment {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 1rem;
+    padding-top: 100px;
+    top: 62px;
+    text-align: left;
+    display:block;
+    height: auto;
+  }
+
+  .text,
+  .text2 {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .contact,
+  .appointment {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+}

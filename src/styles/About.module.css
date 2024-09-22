@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.aboutContainer {
+  padding: 10px 5rem;
+  margin: 0;
+  background-color: #e6f7ff;
+  color: #333;
+  text-align: center;
+  
+}
+
+.aboutHeader h1 {
+  padding-top: 4rem;
+  font-size: 3rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.aboutHeader hr {
+  border: 1px solid #003366;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.aboutSection {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: space-between;
+  
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutSection:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.aboutSectionContent {
+  flex: 1;
+  text-align: left;
+}
+
+.aboutSection h2 {
+ 
+  font-size: 2.5rem;
+  color: #005b99;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.aboutSection p {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aboutImage {
+  flex: 1;
+  max-width: 300px;
+}
+
+.aboutImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutImage img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.aboutValuesList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutValuesList li {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+  background-color: #e6f7ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-style: "Lato";
+  transition: background-color 0.3s ease;
+}
+
+.aboutValuesList li:hover {
+  background-color: #cceeff;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutSectionContent {
+    max-width: 100%;
+  }
+
+  .aboutImage {
+    max-width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutContainer{
+    display: block;
+    margin: 0 0 0 -10px;
+  }
+  .aboutHeader h1 {
+    font-size: 2rem;
+  }
+  .aboutSection{
+    width: 10rem;
+    display: block;
+    margin: auto;
+    padding: auto;
+  }
+  .aboutSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .aboutSection p {
+    font-size: 1rem;
+  }
+
+  .aboutValuesList li {
+    font-size: 1rem;
+  }
+}

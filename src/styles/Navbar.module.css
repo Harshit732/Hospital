@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.navbar {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbody {
+  padding: 0 5rem;
+  background-color:  #0050a1;;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  background: url("../assets/hospitallogo.png") no-repeat center center;
+  background-color: aliceblue;
+  background-size: cover;
+  width: 10rem;
+  height: 4rem;
+}
+
+.hlinks {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.hlinks ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.hlinks li {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+.hlinks li a {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+.hlinks li:hover {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  color:rgb(137, 233, 246);
+}
+
+
+
+.menuIcon {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .navbody {
+    padding: 0 1.5rem; 
+  }
+
+  .menuIcon {
+    display: block; 
+    cursor: pointer;
+  }
+
+  .hlinks {
+    display: none; 
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: aqua;
+    width: 50%; 
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease;
+    max-height: 0; 
+  }
+
+  .hlinks.active {
+    display: flex; 
+    max-height: 500px;
+  }
+
+  .hlinks ul {
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hlinks li {
+    text-align: center;
+  }
+}

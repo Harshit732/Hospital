@@ -1,0 +1,122 @@
+.services {
+    padding: 3rem 4rem;
+    background-color: #e6f7ff;
+    text-align: center;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+.services h2 {
+    font-size: 3rem;
+    color: #003366;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services hr {
+    border: 1px solid #003366;
+    width: 50%;
+    margin: 10px auto 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+.serviceList {
+    margin: 0 ;
+    width: 100%;
+    padding: 0 2rem;
+    gap: 2rem;
+  }
+
+  .serviceItem {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 20rem;
+    
+  }
+
+  .icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    border: 3px solid #005b99;
+  }
+
+.serviceItem h3 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700;
+}
+
+.serviceItem p {
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1;
+    padding: 0 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.serviceItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #e6f7ff;
+}
+
+
+@media (max-width: 1024px) {
+    .serviceList {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 2.5rem;
+    }
+
+    .serviceItem {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .serviceItem h3 {
+        font-size: 1.5rem;
+    }
+
+    .serviceItem p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .serviceItem {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .serviceItem h3 {
+        font-size: 1.3rem;
+    }
+
+    .serviceItem p {
+        font-size: 0.9rem;
+    }
+}
