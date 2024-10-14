@@ -82,8 +82,8 @@ function Services() {
             perPage: 4, 
             gap: '2rem', 
             arrows: true, 
-            pagination: true, 
-            autoplay: true, 
+            pagination: false, 
+            autoplay: false, 
             breakpoints: {
               1024: {
                 perPage: 3, 

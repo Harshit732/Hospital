@@ -1,227 +1,294 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 .footer {
-    background-color: #f2f9ff;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0 0 0;
+  background-color: #f2f9ff;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0;
+  align-items: center;
+  width: 100%;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 5rem;
-    flex-wrap: wrap;
-    gap: 3rem;
-    color: #333;
-    font-family: 'Roboto Slab', sans-serif;
+  display: flex;
+
+  padding: 0rem 5rem;
+  gap: 5rem;
+  flex-wrap: wrap;
+
+  color: #333;
+  font-family: "Roboto Slab", sans-serif;
+  margin-bottom: 0;
 }
 
 hr {
-    border: 1px solid #003366;
-    width: 80%;
-    margin: 0 auto;
+  border: 1px solid #003366;
+  width: 80%;
+  margin: 0;
 }
 
-.section1, .section2, .socialmedia {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0 1rem;
+.section1,
+.section2,
+.quicklinks,
+.socialmedia {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
 }
 
-.section1 h1, .section2 h2, .socialmedia h2 {
-    font-size: 1.5rem;
-    color: #003366;
-}
 
 .logo {
-    width: 10rem;
-    height: auto;
+  width: 15rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  
     transition: transform 0.3s ease;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
 }
 
 .logo:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.quicklinks {
-    flex: 1;
-    padding-top: 2rem;
-    padding-left: 2rem;
+.section1 p,
+.section1 div p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+.section1 h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-family: "Roboto Slab";
+  color: #003366;
 }
 
-.quicklinks h1 {
-    font-size: 1.2rem;
-    color: #003366;
+.section2 h2,
+.quicklinks h2,
+.socialmedia h2 {
+  font-size: 2rem;
+  font-family: "Roboto Slab";
+  color: #003366;
+  margin-bottom: 0;
 }
 
+.section2 p,
+.section2 ul li,
+.quicklinks ul li,
+.socialmedia a {
+  font-family: "Roboto";
+  font-size: 1rem;
+  margin: 0.5rem;
+  text-align: left;
+}
+.section2 ul,
 .quicklinks ul {
-    padding: 0;
-    margin: 1rem 0;
+  padding: 0;
+  margin: 1rem 0;
 }
-
+.section2 ul li,
 .quicklinks ul li {
-    font-weight: bold;
-    list-style-type: none;
-    padding: 8px 0;
-    font-size: 1rem;
-    text-align: left;
-    width: 100%;
-    transition: transform 0.3s ease;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
 }
-
+.section2 ul li:hover,
 .quicklinks ul li:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .socialLinks {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: left;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .socialLinks a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .socialLinks a:hover {
-    color: #003366;
-    transform: translateY(-2px);
+  color: #003366;
+  transform: translateY(-2px);
 }
 
 .section3 {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 2rem;
-    text-align: left;
+  display: flex;
+
+  padding: 0rem 2rem 0;
+}
+
+.section3 div p {
+  font-size: 1rem;
 }
 
 .footerlinks {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .footerlinks a {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footerlinks a:hover {
-    color: #003366;
-    transform: translateY(-2px);
+  color: #003366;
+  transform: translateY(-2px);
 }
 
 .icon {
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
+  height: 100%;
+  font-size: 2rem;
+  
+  margin-right: 0.5rem;
+}
+.icons2{
+  height: 100%;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
 }
 
-
 .subscribe {
-    text-align: center;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  text-align: center;
+  
 }
 
 .subscribe h2 {
-    font-size: 1rem;
-    color: #003366;
-    font-style: "Roboto Slab";
-    
+  font-size: 1rem;
+  color: #003366;
+  font-weight: bold;
+}
+.subscribe form {
+  display: flex;
+  
 }
 
 .emailInput {
-    width: 50%;
-    max-width: 300px;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    
-    font-size: 1rem;
-    
+  width: 6rem;
+  max-width: 300px;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
 }
 
 .subscribeButton {
-    padding: 0.8rem 0.5rem;
-    background-color: #003366;
-    border: none;
-    color: white;
-    
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 0.8rem 1rem;
+  background-color: #003366;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .subscribeButton:hover {
-    background-color: #029ab3;
+  background-color: #029ab3;
 }
 
-/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem 3rem;
+  }
+
+  .section1,
+  .section2,
+  .quicklinks,
+  .socialmedia {
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .section3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        padding: 2rem;
-        text-align: center;
-        gap: 2rem;
-    }
+  .footer {
+    width: 100%;
+  }
+  .container {
+    padding: 1rem;
+    gap: 2rem;
+  }
 
-    .section1, .section3 {
-        align-items: center;
-    }
+  .logo {
+    width: 12rem;
+  }
 
-    .logo {
-        width: 7rem;
-    }
+  .section1,
+  .section2,
+  .quicklinks,
+  .socialmedia {
+    align-items: center;
+    text-align: center;
+  }
 
-    .emailInput, .subscribeButton {
-        width: 100%;
-        margin: 0;
-    }
+  .emailInput {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 
-    .subscribe {
-        width: 100%;
-        padding: 0;
-    }
-
-    .subscribeButton {
-        margin-top: 1rem;
-    }
+  .subscribeButton {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 1rem;
-        gap: 1.5rem;
-    }
+  .footer {
+    width: 100%;
+  }
+  .container {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
 
-    .section2 h2 {
-        font-size: 1rem;
-    }
+  .logo {
+    width: 8rem;
+  }
 
-    .logo {
-        width: 6rem;
-    }
+  .section2 h2,
+  .quicklinks h1,
+  .socialmedia h2 {
+    font-size: 1.2rem;
+  }
 
-    .socialLinks {
-        gap: 1rem;
-    }
-
-    .emailInput {
-        width: 100%;
-    }
+  .section2 p,
+  .quicklinks ul li,
+  .socialmedia a {
+    font-size: 1rem;
+  }
 }

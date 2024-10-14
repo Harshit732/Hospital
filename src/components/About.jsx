@@ -23,7 +23,9 @@ function About() {
             services with a compassionate approach. Our state-of-the-art
             facilities, cutting-edge medical technology, and highly skilled
             medical professionals ensure that you receive the best possible
-            care, every step of the way.
+            care, every step of the way. Our dedication extends beyond treatment,
+            as we focus on preventive care and education to help you lead a
+            healthier life. 
           </p>
         </div>
       </section>
@@ -32,10 +34,13 @@ function About() {
         <div className={styles.aboutSectionContent}>
           <h2>Our Mission</h2>
           <p>
-            Our mission is to deliver world-class healthcare with compassion and
-            dignity. We aim to promote well-being and healthier lifestyles
-            through patient-centered care, cutting-edge technology, and
-            innovative treatments.
+            To deliver world-class healthcare with compassion and dignity,
+            fostering well-being and promoting healthier lifestyles. We are
+            committed to providing patient-centered care, leveraging
+            cutting-edge technology and innovative treatments to enhance the
+            quality of life for all those we serve. We strive to continuously
+            improve our services through research and education, ensuring
+            excellence in every aspect of care.
           </p>
         </div>
         <div className={styles.aboutImage}>
@@ -44,7 +49,7 @@ function About() {
       </section>
 
       <section className={styles.aboutSection}>
-        <div className={styles.aboutImage}>
+        <div className={`${styles.aboutImage} ${styles.aboutvalues}`}>
           <img src={About3} alt="Our Values" />
         </div>
         <div className={styles.aboutSectionContent}>

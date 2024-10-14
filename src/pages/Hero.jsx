@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Hero.module.css";
 import doctors from "../assets/doctors.png";
 import { Link } from "react-router-dom";
+import Helpline from "../components/Helpline";
 
 function Hero() {
   return (
@@ -32,7 +33,9 @@ function Hero() {
         <div className={styles.images}>
           <img src={doctors} alt="Doctors" />
         </div>
+        
       </div>
+      
     </>
   );
 }

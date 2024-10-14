@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 
 .main {
-  position: relative;
-
-  padding-top: 6rem;
-  padding: 5rem 4rem 0 4rem;
+  
+  padding: 2.5rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,11 +21,13 @@
 }
 
 .headerText {
+  font-family: "Roboto Slab", serif;
   margin-bottom: 1.5rem;
   animation: fadeIn 1.5s ease-in-out;
 }
 
 .text {
+
   font-size: 3rem;
   color: #003366;
   font-weight: bold;
@@ -34,7 +36,7 @@
 }
 
 .text2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: rgb(5, 150, 170);
   font-weight: bold;
   white-space: nowrap;
@@ -77,8 +79,8 @@
   animation-delay: 0.8s;
 
   font-family: "Lato", sans-serif;
-  font-weight: 400;
   font-style: bold;
+  
 }
 
 @keyframes fadeInUp {

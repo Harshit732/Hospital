@@ -1,194 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.formContainer {
-    margin-top: 5rem;
-    background-color: #f5faff;
-    padding: 2rem 3rem;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    .formContainer { 
+.formContainer { 
     
-      padding: 2.5rem 15rem;
-      background: #e6f7ff; 
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-      transition: box-shadow 0.3s ease;
-    }
-    
-    .contactForm {
-      
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      
-    
-    }
-    .name{
-      width: 100%;
-      display: flex;
-      gap: 4rem;
-      flex: 1;
-      justify-content: space-between;
-      
-    }
-    .name .formGroup{
-      width: 50%;
-    }
-    
-    .formGroup label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-      font-size: 1rem;
-      color: #333;
-    }
-    
-    .formGroup input,
-    .formGroup textarea {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ddd;
-      border-radius: 8px; /* Softer corners */
-      font-size: 1rem;
-      background-color: #fff;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .formGroup input:focus,
-    .formGroup textarea:focus {
-      border-color: rgb(3, 224, 253);
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-      outline: none;
-    }
-    
-    .error {
-      color: red;
-      font-size: 0.875rem;
-      margin-top: 0.25rem;
-    }
-    
-    .submitButton {
-      
-      width: 25%;
-      padding: 0.75rem;
-      background-color: rgb(3, 224, 253);
-      color: white;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 1.1rem;
-      font-weight: bold;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      text-align: center;
-      margin: 0 auto; 
-      display: block;
-    }
-    
-    .submitButton:hover {
-      background-color: rgb(1, 175, 202);
-      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Subtle hover shadow */
-    }
-    
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      .formContainer {
-          padding: 1.5rem;
-      }
-    
-      .submitButton {
-          font-size: 1rem;
-          padding: 0.7rem;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .formContainer {
-          padding: 1rem;
-      }
-    
-      .submitButton {
-          font-size: 0.9rem;
-          padding: 0.6rem;
-      }
-    }
-    
+  padding: 2.5rem 15rem;
+  background: #e6f7ff; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s ease;
+}
+.heading{
+  text-align:center;
+  font-size: 4rem;
+  font-family: "Roboto Slab";
+  color: #003366;
+}
+.contactForm {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+
+}
+
+.name{
+  
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  flex: 1;
+  justify-content: space-between;
+  
+}
+.name .formGroup{
+  width: 50%;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 1.5rem;
+  font-family: "Roboto Slab";
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.formGroup select{
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.formGroup select:focus{
+  border-color: rgb(3, 224, 253);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  outline: none;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: rgb(3, 224, 253);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submitButton {
+  
+  width: 25%;
+  padding: 0.75rem;
+  background-color:  #003366;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin: 0 auto; 
+  display: block;
+}
+
+.submitButton:hover {
+  background-color: rgb(1, 175, 202);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+
+@media (max-width: 768px) {
+  .formContainer {
+      padding: 1.5rem;
   }
-  
-  .formTitle {
-    font-size: 2rem;
-    color: #00aaff;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    animation: fadeIn 1s ease;
-  }
-  
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .formGroup {
-    margin-bottom: 1rem;
-  }
-  
-  .label {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: block;
-    color: #333;
-  }
-  
-  .input,
-  .textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s ease;
-  }
-  
-  .input:focus,
-  .textarea:focus {
-    border-color: #00aaff;
-  }
-  
-  .textarea {
-    resize: none;
-  }
-  
- 
+
   .submitButton {
-    background-color:  #003366;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s;
-    margin-top: 1rem;
+      font-size: 1rem;
+      padding: 0.7rem;
   }
-  
-  .submitButton:hover {
-    background-color: #0088cc;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+      padding: 1rem;
   }
-  
-  
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+
+  .submitButton {
+      font-size: 0.9rem;
+      padding: 0.6rem;
   }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
+}
