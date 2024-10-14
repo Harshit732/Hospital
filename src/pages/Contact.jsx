@@ -81,7 +81,7 @@ function Contact() {
   return (
     <div style={{ padding: "2rem 4rem" }}>
       <div className={styles.formContainer}>
-        <h2 style={{textAlign:"center", fontSize: "3rem"}}>Contact Us</h2>
+        <h2 className={styles.heading}>Contact Us</h2>
         <form onSubmit={handleSubmit} className={styles.contactForm}>
           <div className={styles.name}>
             <div className={styles.formGroup}>
@@ -139,6 +139,40 @@ function Contact() {
               <span className={styles.error}>{errors.phone}</span>
             )}
           </div>
+          </div>
+
+          <div className={styles.name}>
+            
+            <div className={styles.formGroup}>
+              <label htmlFor="age">Age</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                value={formData.age}
+                onChange={handleChange}
+                min="0"
+              />
+              {errors.age && <span className={styles.error}>{errors.age}</span>}
+            </div>
+
+            <div className={styles.formGroup}>
+              <label htmlFor="gender">Gender</label>
+              <select className={styles.selection}
+                id="gender"
+                name="gender"
+                value={formData.gender}
+                onChange={handleChange}
+                
+              >
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              {errors.gender && (
+                <span className={styles.error}>{errors.gender}</span>
+              )}
+            </div>
           </div>
 
           <div className={styles.formGroup}>

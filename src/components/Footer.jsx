@@ -11,26 +11,13 @@ function Footer() {
     <div className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.section1}>
-          <img className={styles.logo} src={Logo} alt="Hospital Logo" />
-          <h1>"WE CARE.."</h1>
-        </div>
-
-        <div className={styles.quicklinks}>
-          <ul>
-            <h1>Quick Links</h1>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Staff</li>
-            <li>Services</li>
-          </ul>
-        </div>
-
-        <div className={styles.section2}>
+          <div className={styles.logo}>
+          <img src={Logo} alt="Hospital Logo" />
+          </div>
+          <div>
           <h2>Contact Info</h2>
-          <p>
-            Have questions or need assistance? <br />
-            <strong>Contact us:</strong>
-          </p>
+         
+
           <div className={styles.contactDetails}>
             <p>
               <strong>Phone:</strong> +91 9000000000
@@ -42,6 +29,28 @@ function Footer() {
               <strong>Address:</strong> 123 abc, xyz
             </p>
           </div>
+            
+          </div>
+        </div>
+
+        <div className={styles.section2}>
+        <h2>Locations</h2>
+          <ul>
+            <li>Lucknow</li>
+            <li>Delhi</li>
+            <li>Mumbai</li>
+            <li>Gorakhpur</li>
+          </ul>
+        </div>
+
+        <div className={styles.quicklinks}>
+          <h2>Quick Links</h2>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Staff</li>
+            <li>Services</li>
+          </ul>
         </div>
 
         <div className={styles.socialmedia}>
@@ -49,25 +58,24 @@ function Footer() {
           <ul className={styles.socialLinks}>
             <li>
               <a href="https://www.facebook.com/">
-                <BiLogoFacebookCircle className={styles.icon} /> Facebook
+                <BiLogoFacebookCircle className={styles.icon} />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/">
-                <RiInstagramFill className={styles.icon} /> Instagram
+                <RiInstagramFill className={styles.icon} />
               </a>
             </li>
             <li>
               <a href="mailto:harshit.sri732@gmail.com">
-                <BiLogoGmail className={styles.icon} /> Gmail
+                <BiLogoGmail className={styles.icon} />
               </a>
             </li>
           </ul>
 
-          
           <div className={styles.subscribe}>
             <h2>Subscribe to our Newsletter</h2>
-            <form style={{borderRadius:"8px"}}>
+            <form style={{ borderRadius: "8px" }}>
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -84,18 +92,21 @@ function Footer() {
       <hr />
 
       <div className={styles.section3}>
-        <ul className={styles.footerlinks}>
-          <li>
-            <a href="https://www.facebook.com/">
-              <AiFillCopyrightCircle className={styles.icon} /> Copyright
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/">
-              <PiTrademarkFill className={styles.icon} /> Trademark
-            </a>
-          </li>
-        </ul>
+        
+        <div>
+          <ul className={styles.footerlinks}>
+            <li>
+              <a href="https://www.facebook.com/">
+                <AiFillCopyrightCircle className={styles.icon2} /> Copyright
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <PiTrademarkFill className={styles.icon2} /> Trademark
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Hero from "./pages/Hero";
 import Staff from "./components/Staff";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Helpline from "./components/Helpline";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/appointment/" element={<AppointmentForm />} />
           </Routes>
         </div>
+        <div><Helpline/></div>
         <div id="about-section">
           <About />
         </div>
